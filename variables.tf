@@ -145,3 +145,7 @@ variable "connection_draining" {
 variable "idle_timeout" {
   default = 400
 }
+
+variable "owners" {
+  description = "Owner of Service Image"
+  }
