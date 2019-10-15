@@ -13,6 +13,8 @@ data "aws_ami" "service_ami" {
     name   = "tag:service_version"
     values = ["${var.service_version}"]
   }
-
+  
+  owners = ["${var.owners}"]
+  
   most_recent = true
 }
